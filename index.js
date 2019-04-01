@@ -20,6 +20,9 @@ app.use(cors());
 //Use express json method
 app.use(express.json());
 
+//Start Listening on port 5000
+app.listen(process.env.PORT || 5000 , () => console.log("Connection Sucessfull"));
+
 //Respond with all tweets from collection when get request is made
 app.get('/tweets', (req, res) => {
 
@@ -74,6 +77,3 @@ function isNotEmpty(tweet){
     return false;
   }
 }
-
-//Start Listening on port 5000
-app.listen(process.env.PORT || 5000 , () => console.log("Connection Sucessfull"));
