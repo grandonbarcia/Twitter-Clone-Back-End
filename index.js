@@ -76,6 +76,4 @@ function isNotEmpty(tweet){
 }
 
 //Start Listening on port 5000
-app.listen(5000, () => {
-  console.log("listening on port 5000");
-});
+app.listen(process.env.PORT || 5000 , () => console.log("Connection Sucessfull"));
