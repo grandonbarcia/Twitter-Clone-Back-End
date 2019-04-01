@@ -1,0 +1,23 @@
+{
+  "name": "twitter-clone-backend",
+  "version": "1.0.0",
+  "description": "backened for twitter clone",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Brandon Garcia",
+  "license": "MIT",
+  "dependencies": {
+    "bad-words": "^3.0.2",
+    "cors": "^2.8.5",
+    "date-and-time": "^0.6.3",
+    "express": "^4.16.4",
+    "monk": "^6.0.6",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
