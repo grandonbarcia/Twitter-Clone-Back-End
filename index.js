@@ -23,6 +23,17 @@ app.use(express.json());
 //Start Listening on port 5000
 app.listen(process.env.PORT || 5000 , () => console.log("Connection Sucessfull"));
 
+
+app.get('/', (req, res) => {
+
+  tweets
+        .find()
+        .then(tweets => {
+          res.json(tweets);
+        })
+
+});
+
 //Respond with all tweets from collection when get request is made
 app.get('/tweets', (req, res) => {
 
